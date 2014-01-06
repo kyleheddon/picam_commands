@@ -21,3 +21,4 @@ dump.rdb
 Gemfile.lock
 
 config.yml
+*.jpg

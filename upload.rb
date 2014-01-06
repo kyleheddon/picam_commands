@@ -1,8 +1,12 @@
 #!/usr/bin/ruby
-require './media_store'
-require './home_sec'
+require './lib/media_store'
+require './lib/home_sec'
+file = ARGV[0]
 
-file = ARGV[1]
-
+puts "uploading #{file} to S3"
 MediaStore.new(file).upload
-HomeSec.add_event file
+puts "upload to S3 complete\n"
+
+puts 'adding event to homesec'
+HomeSec.new(file).add_event
+puts 'event added'
