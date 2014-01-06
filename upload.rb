@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
-require './media_repo'
-require './security_hub'
+require './media_store'
+require './home_sec'
 
 file = ARGV[1]
 
-MediaRepo.new(file).upload
-SecurityHub.add_motion_event file
+MediaStore.new(file).upload
+HomeSec.add_event file

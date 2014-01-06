@@ -20,4 +20,4 @@
 dump.rdb
 Gemfile.lock
 
-s3.yml
+config.yml

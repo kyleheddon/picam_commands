@@ -1,7 +1,7 @@
-class SecurityHub
+class HomeSec
   class << self
 
-    def add_motion_event(file)
+    def add_event(file)
       puts "Add motion event #{file}"
     end
 
